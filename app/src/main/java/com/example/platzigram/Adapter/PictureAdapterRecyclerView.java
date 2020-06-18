@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.platzigram.R;
 import com.example.platzigram.model.Picture;
+import com.squareup.picasso.Picasso;
 
 
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ import java.util.ArrayList;
         holder.usernameCard.setText(picture.getUserName());
         holder.timeCard.setText(picture.getTime());
         holder.likeNumberCard.setText(picture.getLike_number());
-
+        Picasso.get().load(picture.getPicture()).fit().into(holder.pictureCard);
 
     }
 

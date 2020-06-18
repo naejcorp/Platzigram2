@@ -49,9 +49,9 @@ public class HomeFragment extends Fragment {
 
     public ArrayList<Picture> buidPictures(){
         ArrayList<Picture> pictures=new ArrayList<>();
-        pictures.add(new Picture("https://ibb.co/nz1VYJP","Dariana","2 dias","4 Me gusta"));
-        pictures.add(new Picture("https://ibb.co/Q9fkdxk","Joselyn","5 dias","5 Me gusta"));
-        pictures.add(new Picture("https://ibb.co/PG80rxY","Cataleya","4 dias","2 Me gusta"));
+        pictures.add(new Picture("https://images.pexels.com/photos/821406/pexels-photo-821406.jpeg","Dariana","2 dias","4 Me gusta"));
+        pictures.add(new Picture("https://i.ibb.co/4Rx3FWf/94887700-546697096242026-6649823046066503680-n.jpg","Joselyn","5 dias","5 Me gusta"));
+        pictures.add(new Picture("https://i.imgur.com/vCAtpkU.jpg","Cataleya","4 dias","2 Me gusta"));
 
         return pictures;
     }

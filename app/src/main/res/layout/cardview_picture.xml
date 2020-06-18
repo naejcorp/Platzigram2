@@ -7,7 +7,8 @@
     android:id="@+id/pictureCardview"
     android:layout_width="match_parent"
     android:layout_height="@dimen/heigth_carview"
-    carview:cardCornerRadius="@dimen/cornerradius_cardwiew">
+    carview:cardCornerRadius="@dimen/cornerradius_cardwiew"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
 
     <FrameLayout
         android:layout_width="match_parent"

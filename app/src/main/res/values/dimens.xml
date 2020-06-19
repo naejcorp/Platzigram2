@@ -22,4 +22,20 @@
     <dimen name="heigth_divider">1dp</dimen>
     <dimen name="paddingtop_titleimagedetail">20dp</dimen>
     <dimen name="padding_horizontal_textcontentdetail">35dp</dimen>
+    <dimen name="textSize_usernameprofile">30dp</dimen>
+    <dimen name="dimen_circleImageProfile">160dp</dimen>
+    <dimen name="margintop_circleimageprofile">30dp</dimen>
+    <dimen name="elevation_circleimageProfile">10dp</dimen>
+    <dimen name="limitEnY_circleImage">-206dp</dimen>
+    <dimen name="margintopToolbar_circleimageprofile">-21dp</dimen>
+    <dimen name="width_circleImageToolbar">40dp</dimen>
+    <dimen name="textSizee_userNameToolbarProfile">14dp</dimen>
+    <dimen name="marginLeft_usernameToolbarProfile">72dp</dimen>
+    <dimen name="margintop_userNameToolbarProfile">-100dp</dimen>
+    <dimen name="limitenY_userNameToolbarProfile">-100dp</dimen>
+    <dimen name="margintopTargetY_userNameToolbarprofile">-100dp</dimen>
+    <dimen name="heigth_circleImageToolbar">40dp</dimen>
+
+
+
 </resources>

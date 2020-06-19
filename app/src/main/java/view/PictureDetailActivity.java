@@ -2,8 +2,12 @@ package view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityOptionsCompat;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Fade;
 import android.view.View;
 
 import com.example.platzigram.R;
@@ -16,6 +20,10 @@ public class PictureDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picture_detail);
         showToolbar("",true);
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+            getWindow().setEnterTransition(new Fade());
+        }
+
     }
 
     public void showToolbar(String tittle, boolean upButton){

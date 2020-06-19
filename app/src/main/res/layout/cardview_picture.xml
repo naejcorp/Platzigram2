@@ -21,7 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/heigth_carview"
             android:background="@drawable/image"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:transitionName="@string/transitionName_Picture"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

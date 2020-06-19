@@ -2,6 +2,8 @@ package com.example.platzigram.Adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.platzigram.R;
@@ -54,7 +57,15 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(activity, PictureDetailActivity.class);
-                activity.startActivity(intent);
+                if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+                    Explode explode=new Explode();
+                    explode.setDuration(1000);
+                    activity.getWindow().setExitTransition(explode);
+                    activity.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(activity,v,activity.getString(R.string.transitionName_Picture)).toBundle());
+                }else{
+                    activity.startActivity(intent);
+                }
+
             }
         });
 

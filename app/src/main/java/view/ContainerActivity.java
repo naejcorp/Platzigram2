@@ -7,10 +7,9 @@ import android.os.Bundle;
 
 import com.example.platzigram.R;
 import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
-import view.fragment.HomeFragment;
+import com.example.platzigram.post.view.HomeFragment;
 import view.fragment.ProfileFragment;
 import view.fragment.SearchFragment;
 
